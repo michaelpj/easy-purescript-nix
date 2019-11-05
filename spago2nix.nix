@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
 
 import (
-  pkgs.fetchFromGitHub {
+  (import pkgs.path {}).fetchFromGitHub {
     owner = "justinwoo";
     repo = "spago2nix";
     rev = "c87562adeba1f0900ad8d54558794eb721b6add4";
